@@ -4,27 +4,27 @@ import Image from 'next/image';
 
 const servicios = [
   {
-    titulo: 'DJ',
+    titulo: '',
     descripcion: 'Música en vivo con energía, variedad y ritmo para tu evento.',
     imagen: '/images/servicios/dj.jpg',
   },
   {
-    titulo: 'Barra de Tragos',
+    titulo: '',
     descripcion: 'Cocktails premium preparados en vivo por bartenders expertos.',
     imagen: '/images/servicios/tragos.jpg',
   },
   {
-    titulo: 'Ambientación',
+    titulo: '',
     descripcion: 'Transformamos el salón según tu estilo y temática soñada.',
     imagen: '/images/servicios/ambientacion.jpg',
   },
   {
-    titulo: 'Sonido e Iluminación',
+    titulo: '',
     descripcion: 'Tecnología de última generación para un evento que brilla.',
     imagen: '/images/servicios/sonido.jpg',
   },
   {
-    titulo: 'Catering',
+    titulo: '',
     descripcion: 'Gastronomía de alta calidad adaptada a cada ocasión.',
     imagen: '/images/servicios/catering.jpg',
   },

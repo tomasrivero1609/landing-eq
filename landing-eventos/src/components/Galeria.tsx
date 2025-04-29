@@ -19,7 +19,7 @@ export default function Galeria() {
           className="text-4xl md:text-5xl font-bold mb-4"
           style={{ fontFamily: 'var(--font-title)' }}
         >
-          Galería de Momentos
+          Nuestra instalación
         </h2>
         <p className="text-zinc-400 text-lg" style={{ fontFamily: 'var(--font-body)' }}>
           Mirá cómo se viven los eventos más inolvidables.

@@ -1,41 +1,56 @@
 'use client';
 
+import {
+  Heart,
+  PartyPopper,
+  Calendar,
+  Utensils,
+  Building2,
+  Baby,
+  BookOpen,
+  Users2,
+  Smile,
+  Star,
+} from 'lucide-react';
+
 const eventos = [
-  'Boda',
-  'Quince años',
-  'Cumpleaños',
-  'Cena Show',
-  'Empresarial',
-  'Bautismo',
-  'Comunión',
-  'Reunión',
-  'Primer Año',
-  'Parteen',
+  { nombre: 'Boda', icono: <Heart size={20} /> },
+  { nombre: 'Quince años', icono: <Star size={20} /> },
+  { nombre: 'Cumpleaños', icono: <Smile size={20} /> },
+  { nombre: 'Cena Show', icono: <Utensils size={20} /> },
+  { nombre: 'Empresarial', icono: <Building2 size={20} /> },
+  { nombre: 'Bautismo', icono: <Baby size={20} /> },
+  { nombre: 'Comunión', icono: <BookOpen size={20} /> },
+  { nombre: 'Reunión', icono: <Users2 size={20} /> },
+  { nombre: 'Primer Año', icono: <Calendar size={20} /> },
+  { nombre: 'Parteen', icono: <PartyPopper size={20} /> },
 ];
 
 export default function TiposDeEventos() {
   return (
-    <section className="py-20 bg-zinc-950 text-white px-6">
-      <div className="max-w-6xl mx-auto text-center mb-12">
+    <section id='tipos' className="py-24 bg-black text-white px-6">
+      <div className="max-w-6xl mx-auto text-center mb-16">
         <h2
-          className="text-3xl md:text-4xl font-bold mb-4"
+          className="text-4xl md:text-5xl font-bold mb-4"
           style={{ fontFamily: 'var(--font-title)' }}
         >
           Tipos de Eventos
         </h2>
         <p className="text-zinc-400 text-lg" style={{ fontFamily: 'var(--font-body)' }}>
-          Adaptamos el espacio y los servicios a cada ocasión especial.
+          Un espacio versátil para cada ocasión especial.
         </p>
       </div>
 
-      <div className="flex flex-wrap justify-center gap-4 max-w-4xl mx-auto">
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6 max-w-5xl mx-auto">
         {eventos.map((evento, idx) => (
           <div
             key={idx}
-            className="px-6 py-3 rounded-full border border-zinc-700 text-sm text-zinc-300 hover:text-white hover:border-white transition"
-            style={{ fontFamily: 'var(--font-body)' }}
+            className="flex flex-col items-center justify-center gap-3 p-5 bg-zinc-900 border border-zinc-800 rounded-xl hover:border-white hover:text-white transition duration-300"
           >
-            {evento}
+            <div className="text-white">{evento.icono}</div>
+            <p className="text-sm font-medium text-zinc-300" style={{ fontFamily: 'var(--font-body)' }}>
+              {evento.nombre}
+            </p>
           </div>
         ))}
       </div>
